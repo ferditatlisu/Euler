@@ -1,12 +1,23 @@
-from typing import ForwardRef, List
+from typing import List
 
 
-print("fefe")
+print("Question - 24")
 
 # A permutation is an ordered arrangement of objects. For example, 3124 is one possible permutation of the digits 1, 2, 3 and 4.
 # If all of the permutations are listed numerically or alphabetically, we call it lexicographic order. The lexicographic permutations of 0, 1 and 2 are:
 # 012   021   102   120   201   210
 # What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?
+
+
+# 012345678 1!
+# 01234567 2!
+# 0123456 3!
+# 012345 4!
+# 01234 5!
+# 0123 6!
+# 012 7!
+# 01 8!
+# 0 9!
 
 
 def permutation(number: int):
@@ -41,16 +52,4 @@ while True:
         number_text += str(base_number)
         base_numbers.remove(base_number)
 
-print(number_text)
-
-
-# 012345678 1!
-# 01234567 2!
-# 0123456 3!
-# 012345 4!
-# 01234 5!
-# 0123 6!
-# 012 7!
-# 01 8!
-# 0 9!
-# x10
+print("Answer is :" + number_text)
